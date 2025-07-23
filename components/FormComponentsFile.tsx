@@ -23,12 +23,12 @@ import { Input } from "./ui/input";
 // import { Control } from "react-hook-form";
 
 type CustomFormFieldProps<T extends FieldValues> = {
-  name: keyof T;
+  name: Path<T>
   control: Control<T>;
 };
 
 
-export const CustomFormField = ({ name, control }: CustomFormFieldProps) => {
+export const CustomFormField = <T extends FieldValues>({ name, control }: CustomFormFieldProps<T>) => {
   return (
     <FormField
       control={control}
