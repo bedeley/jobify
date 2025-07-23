@@ -3,7 +3,7 @@ import SearchForm from "@/components/SearchForm";
 import { getAllJobsAction } from "@/utils/actions";
 import {
   dehydrate,
-  hydrate,
+  // hydrate,
   HydrationBoundary,
   QueryClient,
 } from "@tanstack/react-query";

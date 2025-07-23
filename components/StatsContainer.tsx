@@ -4,7 +4,7 @@ import { getStatsAction } from "@/utils/actions";
 import StatsCard from "./StatsCard";
 
 function StatsContainer() {
-  const { data, isPending } = useQuery({
+  const { data } = useQuery({
     queryKey: ["stats"],
     queryFn: () => getStatsAction(),
   });

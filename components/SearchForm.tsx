@@ -9,7 +9,7 @@ import {
 } from "./ui/select";
 import { JobStatus } from "@/utils/types";
 import { Button } from "./ui/button";
-import { FormEvent } from "react";
+// import { FormEvent } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 const SearchForm = () => {
@@ -25,7 +25,7 @@ const SearchForm = () => {
     const formdata = new FormData(e.currentTarget);
     const search = formdata.get("search") as string;
     const jobStatus = formdata.get("jobStatus") as string;
-    let params = new URLSearchParams();
+    const params = new URLSearchParams();
     params.set("search", search);
     params.set("jobStatus", jobStatus);
 

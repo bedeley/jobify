@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
-import { PropsWithChildren } from "react";
+// import { PropsWithChildren } from "react";
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
