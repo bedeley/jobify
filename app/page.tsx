@@ -23,7 +23,9 @@ export default function page() {
             velit quidem reiciendis fugiat.
           </p>
           <Button variant="default" asChild className="mt-4 capitalize">
-            <Link href="/add-job">get started</Link>
+            <Link href="https://jobify-eta-seven.vercel.app/add-job">
+              get started
+            </Link>
           </Button>
         </div>
         <div>
